@@ -1,0 +1,29 @@
+<p>directive works!</p>
+<div class="form">
+        <div>
+            <div class="item" *ngIf="condition">Content to render when condition is <span class="t">True</span>.</div>
+            <div class="item" *ngIf="condition">Content to render when condition is <span class="t">True</span>.</div>
+            <div class="item" *ngIf="!condition">Content to render when condition is <span class="f">False</span>.</div>
+            <div>
+                <button class="btn btn-primary" (click)="switch()">Submit</button>
+                <button class="btn btn-primary" (click)="switch()"[class.disabled]="condition" [disabled]="condition">Disabled</button>
+            </div>
+        </div>
+</div>
+
+
+<div class="form">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+        </tr>
+    </table>
+
+</div>

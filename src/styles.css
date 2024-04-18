@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+

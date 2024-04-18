@@ -1,0 +1,64 @@
+.container__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 36px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #55718824;
+    width: 100%;
+}
+.container__header::after{
+    content: '';
+    position: absolute;
+    background-color: #eee;
+    animation: grain 6s steps(10) infinite;
+    height: 300%;
+    left: -100%;
+    opacity: .06;
+    pointer-events: none;
+    top: -100%;
+    width: 300%;
+    will-change: transform;
+}
+.logo img{
+    border-radius: 8px;
+    width: 37px;
+    transform: rotate(2deg);
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBar .link{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    padding: 8px 12px;
+    margin: 0 27px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: rgba(105, 105, 105, 0.4) 0px 0px 5px 0px, rgba(0, 0, 0, 0.35) 0px 7px 13px -3px, rgba(102, 151, 202, 0.32) 0px -3px 0px inset;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: roboto, sans-serif;
+    color: #000;
+    text-decoration: unset;
+}
+
+.navBar .link:hover{
+    bottom: 4px;
+    box-shadow: rgba(105, 105, 105, 0.4) 0px 0px 5px 1px, rgba(0, 0, 0, 0.35) 0px -2px 16px 0px, rgba(102, 151, 202, 0.32) 0px 0px 0px;
+}
+
+.active{
+    background-color: #185894af;
+}

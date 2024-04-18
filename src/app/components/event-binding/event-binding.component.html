@@ -1,0 +1,14 @@
+<p>event-binding works!</p>
+
+
+<div class="form">
+    <!-- <input type="text" class="input" #data [value]="name" (keyup)="eventValue(data.value)" placeholder="Enter your name"> -->
+    <input type="text" class="input" #data [value]="name" placeholder="Enter your name">
+
+    <pre class="var">
+        name =  {{name}} 
+    </pre>
+    <div>
+        <button class="btn btn-primary" (click)="eventValue(data.value)">Submit</button>
+    </div>
+</div>

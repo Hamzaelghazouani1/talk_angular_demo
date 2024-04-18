@@ -1,0 +1,23 @@
+<p>tooway-data-binding works!</p>
+
+
+<div class="form">
+    <input type="text" class="input" [ngModel]="name" (ngModelChange)="callSearch($event)" placeholder="Enter your name">
+    <input type="text" class="input" [(ngModel)]="name" placeholder="Enter your name">
+    Variable =  {{name}} 
+</div>
+
+
+<div class="form">
+    <input type="text" class="input" [(ngModel)]="nom" placeholder="Enter your name">
+    <input type="text" class="input" [(ngModel)]="email" placeholder="Enter your Email">
+    <input type="text" class="input" [(ngModel)]="cin" placeholder="Enter your cin">
+    <pre class="var">
+        nom =  {{nom}} 
+        email =  {{email}} 
+        cin =  {{cin}} 
+    </pre>
+    <div>
+        <button class="btn btn-primary" (click)="sendForm()">Submit</button>
+    </div>
+</div>
